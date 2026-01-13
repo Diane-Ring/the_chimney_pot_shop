@@ -10,5 +10,5 @@ from .models import Product
 
 # Create your views here.
 class ProductList(generic.ListView):
-    queryset = Product.objects.all()
+    queryset = Product.objects.filter(status=1).order_by("-created_on")
     template_name = "product_list.html"
