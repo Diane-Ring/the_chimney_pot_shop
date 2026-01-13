@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 STATUS = ((0, "Draft"), (1, "Published"))
 
 # Create your models here.
-class Post(models.Model):
+class Product(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(
@@ -22,7 +22,7 @@ class Post(models.Model):
 
 
 class Review(models.Model):
-    post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name="review")
+    post = models.ForeignKey(Product, on_delete=models.CASCADE, related_name="review")
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="reviewer")
     body = models.TextField()
     approved = models.BooleanField(default=False)

@@ -1,13 +1,13 @@
 from django.shortcuts import render
-from django.http import HttpResponse
-from django.views.generic import TemplateView
+from django.views import generic
+from .models import Product
 
-class HomePage(TemplateView):
-    """
-    Displays home page"
-    """
-    template_name = 'index.html'
+#class HomePage(TemplateView):
+"""
+ Displays home page"
+"""
+#   template_name = 'index.html'
 
 # Create your views here.
-def products(request):
-    return HttpResponse("Products")
+class ProductList(generic.ListView):
+    model = Product
