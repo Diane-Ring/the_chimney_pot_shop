@@ -19,7 +19,7 @@ class Product(models.Model):
 
 
 class Review(models.Model):
-    post = models.ForeignKey(Product, on_delete=models.CASCADE, related_name="review")
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name="review")
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="reviewer")
     body = models.TextField()
     approved = models.BooleanField(default=False)
@@ -29,4 +29,4 @@ class Review(models.Model):
         ordering = ["created_on"]
 
     def __str__(self):
-        return f"Review on {self.post.title} | written by {self.author}"
+        return f"Review on {self.product.title} | written by {self.author}"
