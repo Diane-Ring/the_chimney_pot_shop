@@ -15,9 +15,11 @@
                         <div class="card-body">
                             <div class="image-container">
                             </div>
-                            <a href="{% url 'product_detail' product.slug}" class="product-link">
+                            <a href="{% url 'product_detail' product.slug%}" class="product-link">
                                 <h2 class="card-title">{{ product.title }}</h2>
                             </a>
+
+                            <hr />
                         </div>
                     </div>
                 </div>

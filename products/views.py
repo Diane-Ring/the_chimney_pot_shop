@@ -30,7 +30,6 @@ def product_detail(request, slug):
 
     queryset = Product.objects.filter(status=1)
     product = get_object_or_404(queryset, slug=slug)
-
     return render(
         request,
         "products/product_detail.html",
