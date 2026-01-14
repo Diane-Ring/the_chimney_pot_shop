@@ -22,7 +22,7 @@ body {
 }
 
 .dark-bg {
-    background-color: #445261;
+    background-color: #4A5A5F;
 }
 
 .main-bg {
@@ -93,12 +93,12 @@ body {
 
 .product-link {
     text-decoration: none;
-    color: #445261;
+    color: #4A5A5F;
 }
 
 .product-link:hover,
 .page-link {
-    color: #E84610;
+    color: #B5543A;
 }
 
 .product-title {
