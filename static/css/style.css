@@ -111,6 +111,9 @@ body {
     color: lightgray;
 }
 
+.btn-signup { /* your colors/borders */ }
+.right { float: right; }
+
 .btn-signup,
 .btn-edit {
     background-color: #188181;
