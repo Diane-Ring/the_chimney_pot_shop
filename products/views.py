@@ -1,6 +1,8 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic
+from django.contrib import messages
 from .models import Product
+from .forms import ReviewForm
 
 #class HomePage(TemplateView):
 """
@@ -33,6 +35,21 @@ def product_detail(request, slug):
     reviews = product.review.all().order_by("-created_on")
     review_count = product.review.filter(approved=True).count()
 
+    if request.method == "POST":
+        review_form = ReviewForm(data=request.POST)
+        if review_form.is_valid():
+            review = review_form.save(commit=False)
+            review.author = request.user
+            review.product = product
+            review.save()
+            messages.add_message(
+                request, messages.SUCCESS,
+                'Review submitted and awaiting approval'
+    )
+
+    else:
+        review_form = ReviewForm()
+
     return render(
         request,
         "products/product_detail.html",
@@ -40,5 +57,6 @@ def product_detail(request, slug):
             "product": product,
             "reviews": reviews,
             "reviews_count": review_count,
+            "review_form": review_form,
         },
     )
