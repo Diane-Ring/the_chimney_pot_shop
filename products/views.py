@@ -30,8 +30,15 @@ def product_detail(request, slug):
 
     queryset = Product.objects.filter(status=1)
     product = get_object_or_404(queryset, slug=slug)
+    reviews = product.review.all().order_by("-created_on")
+    review_count = product.review.filter(approved=True).count()
+
     return render(
         request,
         "products/product_detail.html",
-        {"product": product},
+        {
+            "product": product,
+            "reviews": reviews,
+            "reviews_count": review_count,
+        },
     )
