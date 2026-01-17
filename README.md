@@ -1,1 +1,5 @@
-# the_chimney_pot_shop
+#The Chimney Pot Shop
+
+This project is to develop a retail-focused website for a chimney pot specialist, designed to showcase products, provide practical information, and support customers in choosing the correct chimney pots for their property.
+From a user perspective, visitors should be able to browse the full range of chimney pots, view detailed product information and specifications, and access guidance on suitability, installation, and maintenance. Where appropriate, users may also be able to make enquiries or purchases directly through the site.
+In terms of design, a clean and minimal approach is taken to allow product photography and technical detail to take priority. A cohesive colour palette and consistent typography will be used throughout the site to reinforce the brand’s focus on quality, durability, and traditional craftsmanship. The layout is designed to be clear and intuitive, enhancing usability and ensuring customers can easily find the information they need with confidence.
