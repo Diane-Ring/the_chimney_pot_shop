@@ -14,7 +14,7 @@ In terms of design, a clean and minimal approach is taken to allow product photo
 <h2 style="font-family: Garamond, serif;">UX Design</h2>
 <p>Font Awesome icons were used for the site icons. e.g the social media icons in the footer.</p>
 <h3 style="font-family:Garamond, serif; display: inline; font-size:20
-">Garamond</h3> font was used for the primary headers and titles. <br>
+">GARAMOND</h3> font was used for the primary headers and titles. <br>
 <h3 style="font-family:Roboto, sans-serif; display: inline; ">Roboto</h3> font was used for all other secondary text.
 <h2 style="font-family: Garamond, serif;">Colour Palette</h2>
 <img src=assets/images/colour_palette.jpg>
