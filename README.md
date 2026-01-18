@@ -175,7 +175,7 @@ In order to create a Heroku app:
    - SECRET_Key - the secret key for your app
    - CLOUDINARY_URL - the Cloudinary url for your image store
 
-The PostgreSQL database is served from [_here_](https://the-chimney-pot-shop-3d063a689bfe.herokuapp.com/)
+The PostgreSQL database is served from 
 
 Once the app setup is complete, click on the Deploy tab and:
 1. connect to the required GitHub account
@@ -185,7 +185,7 @@ Once the app setup is complete, click on the Deploy tab and:
 
 ![Heroku Deployment](assets/images/heroku_deployment.jpg)
 
-The live link can be found ***
+The live link can be found [_here_](https://the-chimney-pot-shop-3d063a689bfe.herokuapp.com/)
 
 ## Credits
 
