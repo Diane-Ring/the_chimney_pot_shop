@@ -105,11 +105,13 @@ The completed sprint was composed of 16 separate items.
 
 Having used the MoSCoW approach to prioritise, 8 were classified as "Must-Have" making up less than 60% of the tasks as recommended. The rest of the first sprint was made up of "Should-Have" and "Could-Have" items. Future development were reflected in the "Wont-Have" items.
 
+![Kanban Project Board](assets/images/Kanban_board.jpg)
+
 ## Features
 
 ### Home page
 
-The home page of the site offers the user a grid of Products, that the user can click on to read each individual Product details.
+The home page of the site offers users a grid of Products.  They can then to click on an individual Product to read the details.
 
 ### Navigation Bar
 
@@ -123,17 +125,25 @@ The page footer is a simple arrangement of 3 social media icons.
 
 The site has a facility to sign up as a user in order to make, edit or delete your own reviews on Products.
 
+![Sign Up Form](assets/images/sign_up.jpg)
+
 ### Sign In
 
 The site has a facility to sign in, once you have created a user account, in order to make, edit or delete your own reviews on Products.
+
+![Sign In Form](assets/images/sign_in.jpg)
 
 ### Sign Out
 
 The site has a facility for a user to sign out of their account.
 
+![Sign Out Screen](assets/images/sign_out.jpg)
+
 ### Admin
 
 The site has a facility for designated administrators to sign in, in order to administrate the site via the standard Django admin interface.
+
+![Django Admin Interface](assets/images/admin_interface_screen.jpg)
 
 ### Entity Relationship Diagram
 
@@ -165,7 +175,7 @@ In order to create a Heroku app:
    - SECRET_Key - the secret key for your app
    - CLOUDINARY_URL - the Cloudinary url for your image store
 
-The PostgreSQL database is served from ***
+The PostgreSQL database is served from [_here_](https://the-chimney-pot-shop-3d063a689bfe.herokuapp.com/)
 
 Once the app setup is complete, click on the Deploy tab and:
 1. connect to the required GitHub account
@@ -173,10 +183,12 @@ Once the app setup is complete, click on the Deploy tab and:
 3. Click the Deploy Branch button to start the deployment.
 4. Once deployment finishes the app can be launched by clicking on the view button.
 
+![Heroku Deployment](assets/images/heroku_deployment.jpg)
+
 The live link can be found ***
 
 ## Credits
 
-This project is based in the 'Codestar' project from Code Institute's LMS and 'Broken Lines Blog' by Mark Briscoe.
+This project is based on 'Codestar' project from Code Institute's LMS and 'Broken Lines Blog' by Mark Briscoe.
 
 All content copyright The Chimney Pot Shop Ltd. 2026
