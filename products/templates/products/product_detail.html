@@ -12,7 +12,11 @@
                 <h1 class="product-title">{{ product.title }}</h1>
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
-                <img src="{% static 'images/the-chimeny-pot-shop-logo-transparent.jpg' %}" class="scale" alt="The Chimney Pot Shop Logo">
+              {% if "placeholder" in product.featured_image.url %}
+              <img class="card-img-top" src="{% static 'images/the-chimeny-pot-shop-logo-placeholder.jpg' %}" alt="placeholder image">
+              {% else %}
+              <img class="card-img-top" src="{{ product.featured_image.url }}" alt="{{ product.title }}">
+              {% endif %}
             </div>
         </div>
     </div>

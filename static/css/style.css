@@ -9,10 +9,6 @@ body {
     color: #4A4A4F;
 }
 
-.red-o {
-    color: #E84610;
-}
-
 .thin {
     font-weight: 300;
 }
@@ -36,6 +32,18 @@ body {
 
 .image-container {
     position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img-top {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .image-flash {
