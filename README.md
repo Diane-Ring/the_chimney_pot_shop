@@ -12,7 +12,7 @@ In terms of design, a clean and minimal approach is taken to allow product photo
 <img src=assets/images/mobile.jpg>
 <br><br>
 <h2 style="font-family: Garamond, serif;">UX Design</h2>
-<p>Font Awesome icons were used for the site icons. e.g the social media icons in the footer.
+<p>Font Awesome icons were used for the site icons. e.g the social media icons in the footer.</p>
 <h3 style="font-family:Garamond, serif; display: inline; font-size:20
 ">Garamond</h3> font was used for the primary headers and titles. <br>
 <h3 style="font-family:Roboto, sans-serif; display: inline; ">Roboto</h3> font was used for all other secondary text.
@@ -87,6 +87,62 @@ In terms of design, a clean and minimal approach is taken to allow product photo
 
 <p style="font-family:Roboto, sans-serif">
 The completed sprint was composed of 16 separate items.<br><br> 
-Having used the MoSCoW approach to prioritise, 8 were classified as "Must-Have" making up less than 60% of the tasks as recommended.<br> The rest of the first sprint was made up of "Should-Have" and "Could-Have" items. <br>Future development were reflected in the “Wont-Have” items.
+Having used the MoSCoW approach to prioritise, 8 were classified as "Must-Have" making up less than 60% of the tasks as recommended.<br> The rest of the first sprint was made up of "Should-Have" and "Could-Have" items. <br>Future development were reflected in the “Wont-Have” items.</p>
+<h2 style="font-family: Garamond, serif;">Features</h2>
+
+<h3 style="font-family: Garamond, serif;">Home page</h3>
+<p style="font-family:Roboto, sans-serif">The home page of the site offers the user a grid of Products, that the user can click on to read each individual Product details.</p>
+
+<h3 style="font-family: Garamond, serif;">Navigation Bar</h3>
+<p style="font-family:Roboto, sans-serif">Navigation is provided via a bootstrap navbar, and is fully responsive
+</p>
+
+<h3 style="font-family: Garamond, serif;">The Footer</h3>
+<p style="font-family:Roboto, sans-serif">The page footer is a simple arrangement of 3 social media icons. </p>
+
+<h3 style="font-family: Garamond, serif;">Sign Up</h3>
+<p style="font-family:Roboto, sans-serif">The site has a facility to sign up as a user in order to make, edit or delete your own reviews on Products.</p>
+<h3 style="font-family: Garamond, serif;">Sign In</h3>
+<p style="font-family:Roboto, sans-serif">The site has a facility to sign in, once you have created a user account, in order to make, edit or delete your own reviews on Products.</p>
+
+<h3 style="font-family: Garamond, serif;">Sign Out</h3>
+<p style="font-family:Roboto, sans-serif">The site has a facility for a user to sign out of their account.</p>
+
+<h3 style="font-family: Garamond, serif;">Admin</h3>
+<p style="font-family:Roboto, sans-serif">The site has a facility for designated administrators to sign in, in order to administrate the site via the standard Django admin interface.</p>
+
+<h3 style="font-family: Garamond, serif;">Entity Relationship Diagram</h3><p style="font-family:Roboto, sans-serif">The following data structure was created for the project.</p>
+
+<h2 style="font-family: Garamond, serif;">Testing</h2>
+<h3 style="font-family: Garamond, serif;">Manual Testing</h3>
+
+<h3 style="font-family: Garamond, serif;">Lighthouse</h3>
+
+<h3 style="font-family: Garamond, serif;">Responsive Testing</h3>
+
+<h3 style="font-family: Garamond, serif;">Validator Testing</h3>
+
+<h2 style="font-family: Garamond, serif;">Deployment</h2>
+<p style="font-family: Roboto, sans-serif;">The site was deployed to Heroku from the main branch of the repository early in the development stage for continuous deployment and checking.<br><br>
+The Heroku app is setup with 3 environment variables, replacing the environment variables stored in env.py (which doesn't get pushed to GitHub).<br><br>
+In order to create a Heroku app:<br>
+1.	Click on New in the Heroku dashboard, and Create new app from the menu dropdown.<br>
+2.	Give your new app a unique name, and choose a region, preferably one that is geographically closest to you.<br>
+3.	Click "Create app"<br>
+4.	In your app settings, click on "Reveal Config Vars" and add the environment variables for your app. These are:<br>
+- DATABASE_URL - your database connection string<br>
+- SECRET_Key - the secret key for your app<br>
+- CLOUDINARY_URL - the Cloudinary url for your image store<br><br>
+The ProductgreSQL database is served from ***<br>
+Once the app setup is complete, click on the Deploy tab and:<br>
+a.	connect to the required GitHub account<br>
+b.	select the repository to deploy from<br>
+c.	Click the Deploy Branch button to start the deployment.<br>
+d.	Once deployment finishes the app can be launched by clicking on the view button.<br>
+<p style="font-family: Roboto, sans-serif;">The live link can be found ***</p>
+<h2 style="font-family: Garamond, serif;">Credits</h2>
+<p style="font-family: Roboto, sans-serif;">This project is based in the 'Codestar' project from Code Institute's LMS and 'Broken Lines Blog' by Mark Briscoe</p>
+<p style="font-family: Roboto, sans-serif;">All content copyright The Chimney Pot Shop Ltd. 2026</p>
+
 
 
