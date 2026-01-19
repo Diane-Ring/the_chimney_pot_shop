@@ -153,15 +153,49 @@ The following data structure was created for the project.
 
 ### Automated Testing
 
-The key functionality of the review form was tested using an automated test in Django, using test_form.py.
 The Django test suite creates an empty database for testing, using the built-in SQLite3 database, ensuring it is independent of the web browser and our live database.
-
+The key functionality of the review form was tested using an automated test in Django, using test_form.py.
+Using the _setup_ method, we created a superuser and a small product post in our test database, assigned this data as a variable of the _self_ object.  Then we were able to test the views using the _get_ method.  We then tested a successful review submission on a product using the _post_ method.
 
 ### Manual Testing
+The site was tested on the following browser for compatibility:
+
+### Chrome ###
+|   Test	|  Expected Result 	|  Actual Result	|
+|---	|---	|---	|
+|   Click Home menu	|  success 	|  success 	|
+|   Click Admin menu	|  success 	|  success 	|
+|   Click Login menu	|  success 	|  success 	|
+|   Click Logout	|  success 	|  success 	|
+|   Click individual product post	|  success 	|  success 	|
+|   Create, edit, delete a personal review	|  success 	|  success 	|
+|   Register new account	|  success 	|  success 	|
+|   Access admin interface	|  success 	|  success 	|
+|   Responsivity	|  success 	|  success 	|
+|   Open new page from social media links	|  success 	|  success 	|
 
 ### Lighthouse
+The site was tested using Lighthouse with the following results:
+[Lighthouse Review results](assets/images/Lighthouse_test_results.jpg)
+The performance score was negatively affected by:
+- Chrome extensions
+[Chrome extension issues](assets/images/chrome_extension_issue.jpg)
+- Download time of images
+[Image download time issue](assets/images/image_download_issues.jpg)
+- No chache time
+- Document request latency
+[Document request latency issues](assets/images/document_request_latency.jpg)
+- Rendering being blocked by requests from Bootstrap, CSS and JSDeliver.
+- Font display
+- layout shifts
+
+The solution to the issues that are slowing the performance can be investigated at a later time, but as there is a hard deadline for submission it has not been possible to do that yet.
+
+Performance can also be affected by internet traffic routing, performance of the device being used, browser extensions, and antivirus software, all of which are out of the control of the website.
 
 ### Responsive Testing
+
+In addition to the built in Bootstrap responsive CSS, Chrome dev tools were used often during the build to test the site at desktop, tablet and mobile.  The site was also manually viewed on laptops, tablets and phones.    
 
 ### Validator Testing
 
