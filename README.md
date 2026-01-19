@@ -224,6 +224,34 @@ In addition to the built in Bootstrap responsive CSS, Chrome dev tools were used
 
 - JavaScript
     - no
+## AI Usage and Methodology
+
+### Overview
+- AI assistance supported debugging, documentation, Django templates, CSS layout, and test repairs.
+- Primary goal: streamline routine edits and debugging while keeping design decisions and reviews manual.
+
+### Tools
+- GitHub Copilot: chat and inline suggestions used for formatting, code fixes, testing,  debugging, and documentation structure.
+
+### Scope
+- README conversion from HTML to standard Markdown.
+- Test suite diagnosis and fixes.
+- Minor model and view clarifications.
+
+### Safeguards
+- Manual review of all AI-suggested changes.
+- Tests run and fixed until passing 
+- PEP 8 adherence and template validation checks.
+
+### Notable AI Assistance
+- Any Heroku loading or syntax errors were copied and pasted into Copilot for easy corrections.
+
+### Limitations
+- Layout choices were kept minimal to respect existing design; some suggestions (e.g., enforced aspect ratios) were intentionally deferred.
+- GitHub README sanitization limits HTML attributes like target="_blank".
+
+### Attributions
+- AI assistance (GitHub, Copilot) was used for routine improvements and bug fixing.  All final decisions and validations were performed manually.
 
 ## Deployment
 
