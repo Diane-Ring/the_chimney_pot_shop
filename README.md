@@ -208,6 +208,9 @@ In addition to the built in Bootstrap responsive CSS, Chrome dev tools were used
 
 ### Validator Testing
 - HTML
+    - No errors found with the HTML code.
+
+![HTMLtest](assets/images/W3Chtml.jpg)
 
 - CSS
     - No errors were found with the CSS code.
