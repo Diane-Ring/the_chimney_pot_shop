@@ -111,7 +111,7 @@ Having used the MoSCoW approach to prioritise, 8 were classified as "Must-Have" 
 
 ### Home page
 
-The home page of the site offers users a grid of Products.  They can then to click on an individual Product to read the details.
+The home page of the site offers users a grid of Products. Users can then click on an individual Product to read the details.
 
 ### Navigation Bar
 
@@ -189,7 +189,7 @@ The performance score was negatively affected by:
 
 ![Image download time issue](assets/images/image_download_issues.jpg)
 
-- No chache time
+- No cache time
 - Document request latency
 
 ![Document request latency issues](assets/images/document_request_latency.jpg)
@@ -204,9 +204,23 @@ Performance can also be affected by internet traffic routing, performance of the
 
 ### Responsive Testing
 
-In addition to the built in Bootstrap responsive CSS, Chrome dev tools were used often during the build to test the site at desktop, tablet and mobile.  The site was also manually viewed on laptops, tablets and phones.    
+In addition to the built in Bootstrap responsive CSS, Chrome dev tools were used often during the build to test the site at desktop, tablet and mobile. The site was also manually viewed on laptops, tablets and phones.    
 
 ### Validator Testing
+- HTML
+
+- CSS
+    - No errors were found with the CSS code.
+
+![CSS Validation](assets/images/W3C_CSS_validation.jpg)
+
+- Python
+    - Co-pilot checked all python code against PEP8 standards
+![PEP8validation](assets/images/PEP8 validation of Python code.jpg)
+    - 
+
+- JavaScript
+    -
 
 ## Deployment
 
