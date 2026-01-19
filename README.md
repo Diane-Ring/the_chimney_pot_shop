@@ -153,8 +153,8 @@ The following data structure was created for the project.
 
 ### Automated Testing
 
-The Django test suite creates an empty database for testing, using the built-in SQLite3 database, ensuring it is independent of the web browser and our live database.
-The key functionality of the review form was tested using an automated test in Django, using test_form.py.
+The Django test suite creates an empty database for testing, using the built-in SQLite3 database, ensuring it is independent of the web browser and our live database.<br>
+The key functionality of the review form was tested using an automated test in Django, using test_form.py.<br>
 Using the _setup_ method, we created a superuser and a small product post in our test database, assigned this data as a variable of the _self_ object.  Then we were able to test the views using the _get_ method.  We then tested a successful review submission on a product using the _post_ method.
 
 ### Manual Testing
@@ -176,9 +176,13 @@ The site was tested on the following browser for compatibility:
 
 ### Lighthouse
 The site was tested using Lighthouse with the following results:
+
 [Lighthouse Review results](assets/images/Lighthouse_test_results.jpg)
+
 The performance score was negatively affected by:
+
 - Chrome extensions
+
 [Chrome extension issues](assets/images/chrome_extension_issue.jpg)
 - Download time of images
 [Image download time issue](assets/images/image_download_issues.jpg)
