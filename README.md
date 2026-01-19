@@ -177,18 +177,23 @@ The site was tested on the following browser for compatibility:
 ### Lighthouse
 The site was tested using Lighthouse with the following results:
 
-[Lighthouse Review results](assets/images/Lighthouse_test_results.jpg)
+![Lighthouse Review results](assets/images/Lighthouse_test_results.jpg)
 
 The performance score was negatively affected by:
 
 - Chrome extensions
 
-[Chrome extension issues](assets/images/chrome_extension_issue.jpg)
+![Chrome extension issues](assets/images/chrome_extension_issue.jpg)
+
 - Download time of images
-[Image download time issue](assets/images/image_download_issues.jpg)
+
+![Image download time issue](assets/images/image_download_issues.jpg)
+
 - No chache time
 - Document request latency
-[Document request latency issues](assets/images/document_request_latency.jpg)
+
+![Document request latency issues](assets/images/document_request_latency.jpg)
+
 - Rendering being blocked by requests from Bootstrap, CSS and JSDeliver.
 - Font display
 - layout shifts
