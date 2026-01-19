@@ -249,10 +249,10 @@ Once the app setup is complete, click on the Deploy tab and:
 
 ![Heroku Deployment](assets/images/heroku_deployment.jpg)
 
-The live link can be found [_here_](https://the-chimney-pot-shop-3d063a689bfe.herokuapp.com/)
+The live link can be found [_here_](https://the-chimney-pot-shop-3d063a689bfe.herokuapp.com/)Ctrl+Click/Middle-click to open in a new tab.
 
 ## Credits
 
-This project is based on 'Codestar' project from Code Institute's LMS and 'Broken Lines Blog' by Mark Briscoe.
+This project is based on the 'Codestar' project from Code Institute's LMS and 'Broken Lines Blog' by Mark Briscoe.
 
 All content copyright The Chimney Pot Shop Ltd. 2026
