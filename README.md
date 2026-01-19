@@ -155,7 +155,7 @@ The following data structure was created for the project.
 
 The Django test suite creates an empty database for testing, using the built-in SQLite3 database, ensuring it is independent of the web browser and our live database.<br>
 The key functionality of the review form was tested using an automated test in Django, using test_form.py.<br>
-Using the _setup_ method, we created a superuser and a small product post in our test database, assigned this data as a variable of the _self_ object.  Then we were able to test the views using the _get_ method.  We then tested a successful review submission on a product using the _post_ method.
+Using the _setup_ method, we created a superuser and a small product post in our test database, assigned this data as a variable of the _self_ object. Then we were able to test the views using the _get_ method. We then tested a successful review submission on a product using the _post_ method.
 
 ### Manual Testing
 The site was tested on the following browser for compatibility:
@@ -194,7 +194,7 @@ The performance score was negatively affected by:
 
 ![Document request latency issues](assets/images/document_request_latency.jpg)
 
-- Rendering being blocked by requests from Bootstrap, CSS and JSDeliver.
+- Rendering being blocked by requests from Bootstrap, CSS and jsDelivr.
 - Font display
 - layout shifts
 
@@ -216,11 +216,11 @@ In addition to the built in Bootstrap responsive CSS, Chrome dev tools were used
 
 - Python
     - Co-pilot checked all python code against PEP8 standards
-![PEP8validation](assets/images/PEP8 validation of Python code.jpg)
+![PEP8validation](assets/images/PEP8validation.jpg)
     - 
 
 - JavaScript
-    -
+    - no
 
 ## Deployment
 
@@ -237,8 +237,6 @@ In order to create a Heroku app:
    - DATABASE_URL - your database connection string
    - SECRET_Key - the secret key for your app
    - CLOUDINARY_URL - the Cloudinary url for your image store
-
-The PostgreSQL database is served from 
 
 Once the app setup is complete, click on the Deploy tab and:
 1. connect to the required GitHub account
