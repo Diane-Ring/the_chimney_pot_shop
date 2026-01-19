@@ -151,6 +151,12 @@ The following data structure was created for the project.
 
 ## Testing
 
+### Automated Testing
+
+The key functionality of the review form was tested using an automated test in Django, using test_form.py.
+The Django test suite creates an empty database for testing, using the built-in SQLite3 database, ensuring it is independent of the web browser and our live database.
+
+
 ### Manual Testing
 
 ### Lighthouse
