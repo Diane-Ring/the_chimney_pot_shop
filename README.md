@@ -176,7 +176,7 @@ The site was tested on the following browser for compatibility:
 ### Chrome ###
 |   Test	|  Expected Result 	|  Actual Result	|
 |---	|---	|---	|
-|   Click Home menu	|  goes to Home page 	|  success 	|
+|   Click Home menu	|  goes to home page 	|  success 	|
 |   Click Admin menu	|  shows admin menu 	|  success 	|
 |   Click Login menu	|  shows login screen 	|  success 	|
 |   Click Logout	|  asks are you sure, with logout button 	|  success 	|
@@ -216,6 +216,10 @@ The solution to the issues that are slowing the performance can be investigated 
 
 Performance can also be affected by internet traffic routing, performance of the device being used, browser extensions, and antivirus software, all of which are out of the control of the website.
 
+However, the site was tested again the next day and had an improved Performance score of 97%.  The issues raised in the first test will still be looked at.
+
+![Improved lighthouse Test](assets/images/improved_lighthouse_score.jpg)
+
 ### Responsive Testing
 
 In addition to the built in Bootstrap responsive CSS, Chrome dev tools were used often during the build to test the site at desktop, tablet and mobile. The site was also manually viewed on laptops, tablets and phones.    
@@ -234,10 +238,8 @@ In addition to the built in Bootstrap responsive CSS, Chrome dev tools were used
 - Python
     - Co-pilot checked all python code against PEP8 standards
 ![PEP8validation](assets/images/PEP8validation.jpg)
-    - 
+    
 
-- JavaScript
-    - no
 ## AI Usage and Methodology
 
 ### Overview
