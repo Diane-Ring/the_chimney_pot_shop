@@ -241,20 +241,21 @@ In addition to the built in Bootstrap responsive CSS, Chrome dev tools were used
     
 ## Accessibility Testing
 
-!['www.accessibilitychecker.org'](https://www.accessibilitychecker.org/)was used to test accessibility to UK standards.
+![accessibilitychecker](https://www.accessibilitychecker.org/)was used to test accessibility to UK standards, they offer two free tests before you need to sign up to a plan.<br>
+Both the home page and product page failed on not having `<h>`Titles`</h>`.
 
 ## AI Usage and Methodology
 
 ### Overview
-- AI assistance supported debugging, documentation, Django templates, CSS layout, and test repairs.
+- AI assistance supported debugging, documentation, Django templates, CSS layout, code creation, code optimisation, generate unit tests, and test repairs.
 - Primary goal: streamline routine edits and debugging while keeping design decisions and reviews manual.
 
 ### Tools
-- GitHub Copilot: chat and inline suggestions used for formatting, code fixes, testing,  debugging, and documentation structure.
+- GitHub Copilot: chat and inline suggestions used for unit tests, formatting, code fixes, debugging, and documentation structure.
 
 ### Scope
 - README conversion from HTML to standard Markdown.
-- Test suite diagnosis and fixes.
+- Test suite creation, diagnosis and fixes.
 - Minor model and view clarifications.
 
 ### Safeguards
@@ -264,13 +265,22 @@ In addition to the built in Bootstrap responsive CSS, Chrome dev tools were used
 
 ### Notable AI Assistance
 - Any Heroku loading or syntax errors were copied and pasted into Copilot for easy corrections.
+- Creating automated unit tests.
+- README.md: Markdown normalization, image alt text, link structure, section layout; planned but user-reverted “AI Usage & Methodology” section and added it manually.
+- base.html: Corrected {% static %} usage, fixed navbar anchor tag, set logo size.
+- index.html: Cleaned duplicate root tags, adjusted Bootstrap columns (2/3/4 per-row), row break logic, pagination block handling.
+- product_detail.html: Removed duplicate DOCTYPE/html, validated structure.
+- style.css: Image container centering, .card-title min-height alignment, vendor-prefixed transform details.
+- test_forms.py: Fixed assert syntax.
+- test_views.py: Corrected URL name, removed non-existent model fields, added follow=True for redirects.
+
 
 ### Limitations
-- Layout choices were kept minimal to respect existing design; some suggestions (e.g., enforced aspect ratios) were intentionally deferred.
+- Layout choices were kept minimal; some suggestions (e.g., enforced aspect ratios) were intentionally deferred.
 - GitHub README sanitization limits HTML attributes like target="_blank".
 
 ### Attributions
-- AI assistance (GitHub, Copilot) was used for routine improvements and bug fixing.  All final decisions and validations were performed manually.
+- AI assistance (GitHub, Copilot, ChatGPT) was used for routine improvements, deployment issues and bug fixing.  Using AI saved a huge amount of time in debugging, typo fixing and error correction with Heroku deployment issues.  Copilot assisted with spacing issues for the product cards, but was unable to solve the problem. All final decisions and validations were performed manually.
 
 ## Deployment
 
