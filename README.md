@@ -179,7 +179,7 @@ The site was tested on the following browser for compatibility:
 |   Click Home menu	|  goes to Home page 	|  success 	|
 |   Click Admin menu	|  shows admin menu 	|  success 	|
 |   Click Login menu	|  shows login screen 	|  success 	|
-|   Click Logout	|  askes are you sure, with logout button 	|  success 	|
+|   Click Logout	|  asks are you sure, with logout button 	|  success 	|
 |   Click individual product post	|  goes to product page 	|  success 	|
 |   Create, edit, delete a personal review	|  can create a review 	|  success 	|
 |   Edit and delete a personal review	|  can edit and delete own reviews	|  success 	|
