@@ -241,7 +241,7 @@ In addition to the built in Bootstrap responsive CSS, Chrome dev tools were used
     
 ## Accessibility Testing
 
-![www.accessibilitychecker.org](https://www.accessibilitychecker.org/)was used to test accessibility to UK standards.
+!['www.accessibilitychecker.org'](https://www.accessibilitychecker.org/)was used to test accessibility to UK standards.
 
 ## AI Usage and Methodology
 
