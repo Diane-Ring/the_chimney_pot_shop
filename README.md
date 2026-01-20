@@ -239,6 +239,9 @@ In addition to the built in Bootstrap responsive CSS, Chrome dev tools were used
     - Co-pilot checked all python code against PEP8 standards
 ![PEP8validation](assets/images/PEP8validation.jpg)
     
+## Accessibility Testing
+
+![https://www.accessibilitychecker.org/](https://www.accessibilitychecker.org/)was used to test accessibility to UK standards.
 
 ## AI Usage and Methodology
 
