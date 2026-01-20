@@ -12,11 +12,14 @@ A responsive site layout enables easy navigation on all devices.
 
 ## Desktop
 
-![Desktop view](assets/images/desktop.jpg)
+![Desktop view](assets/images/Home_page.jpg)
+
+## Tablet
+![Tablet view](assets/images/tablet_screen.jpg)
 
 ## Mobile
 
-![Mobile view](assets/images/mobile.jpg)
+![Mobile view](assets/images/mobile_screen.jpg)
 
 ## UX Design
 
@@ -148,6 +151,8 @@ The site has a facility for designated administrators to sign in, in order to ad
 ### Entity Relationship Diagram
 
 The following data structure was created for the project.
+
+![Entity Relationship Diagram](assets/images/ERD.jpg)
 
 ## Testing
 
@@ -281,6 +286,6 @@ The live link can be found [_here_](https://the-chimney-pot-shop-3d063a689bfe.he
 
 ## Credits
 
-This project is based on the 'Codestar' project from Code Institute's LMS and 'Broken Lines Blog' by Mark Briscoe.
+This project is based on the 'Codestar' project from Code Institute's LMS and 'Broken Lines Blog' by Mark Briscoe.<br> [_Copilot_](#ai-usage-and-methodology) has also requested a mention in the credits.
 
 All content copyright The Chimney Pot Shop Ltd. 2026
