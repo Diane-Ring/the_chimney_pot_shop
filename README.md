@@ -37,6 +37,10 @@ A simple colour palette was chosen to feel solid, traditional, and trustworthy, 
 
 ## Home Page Wireframe Design
 
+These are the original concept wireframe diagrams.<br>
+Time constraints meant that not all features could be implemented. <br>This will be completed in a later sprint.<br><br>
+The pagination will also change as more products are added.  It has been set at 3 per row, 6 per page to show the NEXT and PREV button funtion.
+
 ![Home page wireframe](assets/images/Homepage_wireframe.jpg)
 
 ## Product Detail Page Wireframe Design
@@ -120,9 +124,13 @@ The home page of the site offers users a grid of Products. Users can then click 
 
 Navigation is provided via a bootstrap navbar, and is fully responsive.
 
+![Navigation Bar](assets/images/Navbar.jpg)
+
 ### The Footer
 
 The page footer is a simple arrangement of 3 social media icons.
+
+![Footer](assets/images/Footer.jpg)
 
 ### Sign Up
 
