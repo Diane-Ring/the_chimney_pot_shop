@@ -128,7 +128,7 @@ Navigation is provided via a bootstrap navbar, and is fully responsive.
 
 ### The Footer
 
-The page footer is a simple arrangement of 3 social media icons.
+The page footer is a simple arrangement of 4 social media icons.
 
 ![Footer](assets/images/Footer.jpg)
 
@@ -176,16 +176,17 @@ The site was tested on the following browser for compatibility:
 ### Chrome ###
 |   Test	|  Expected Result 	|  Actual Result	|
 |---	|---	|---	|
-|   Click Home menu	|  success 	|  success 	|
-|   Click Admin menu	|  success 	|  success 	|
-|   Click Login menu	|  success 	|  success 	|
-|   Click Logout	|  success 	|  success 	|
-|   Click individual product post	|  success 	|  success 	|
-|   Create, edit, delete a personal review	|  success 	|  success 	|
-|   Register new account	|  success 	|  success 	|
-|   Access admin interface	|  success 	|  success 	|
-|   Responsivity	|  success 	|  success 	|
-|   Open new page from social media links	|  success 	|  success 	|
+|   Click Home menu	|  goes to Home page 	|  success 	|
+|   Click Admin menu	|  shows admin menu 	|  success 	|
+|   Click Login menu	|  shows login screen 	|  success 	|
+|   Click Logout	|  askes are you sure, with logout button 	|  success 	|
+|   Click individual product post	|  goes to product page 	|  success 	|
+|   Create, edit, delete a personal review	|  can create a review 	|  success 	|
+|   Edit and delete a personal review	|  can edit and delete own reviews	|  success 	|
+|   Register new account	|  new account is created 	|  success 	|
+|   Access admin interface	|  admin page appears	|  success 	|
+|   Responsivity	|  responsive to all media sizes 	|  success 	|
+|   Open new page from social media links	|  opens social media page 	|  success 	|
 
 ### Lighthouse
 The site was tested using Lighthouse with the following results:
