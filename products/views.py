@@ -43,14 +43,14 @@ def product_detail(request, slug):
             review.save()
             messages.add_message(
                 request, messages.SUCCESS,
-                'Review submitted and awaiting approval'
+                'Review submitted successfully, you can edit or delete your review '
             )
             return HttpResponseRedirect(reverse('product_detail', args=[slug]))
     else:
         review_form = ReviewForm()
 
     reviews = product.review.all().order_by("-created_on")
-    review_count = product.review.filter(approved=True).count()
+    review_count = product.review.all().count()
 
     return render(
         request,
@@ -77,7 +77,6 @@ def review_edit(request, slug, review_id):
         if review_form.is_valid() and review.author == request.user:
             review = review_form.save(commit=False)
             review.product = product
-            review.approved = False
             review.save()
             messages.add_message(request, messages.SUCCESS, 'Review Updated!')
         else:

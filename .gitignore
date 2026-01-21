@@ -10,3 +10,5 @@ cloudinary_python.txt
 .venv/
 db.sqlite3
 staticfiles/
+remove_approval.txt
+README_old.md
