@@ -188,6 +188,28 @@ The site was tested on the following browser for compatibility:
 |   Responsivity	|  responsive to all media sizes 	|  success 	|
 |   Open new page from social media links	|  opens social media page 	|  success 	|
 
+## User Story Test Table
+| **User Story** | **Expected Result** | **Actual Result** |
+|----------------|---------------------|-------------------|
+| As a site admin I want to be able to create, edit and delete products. | When logged in as admin, products can be created, edited, and deleted from the admin page. | |
+| As a site user, I can view a list of products and click on the product I want to view. | A list of products is displayed on the front page. Multiple products are listed and paginated. | |
+| As a site user, I can click on a product so that I can see an image, read the description and see the price. | When a product title is clicked, a detailed view of the individual product is displayed. | |
+| As a site admin I can create draft products so that I can finish writing the content later, prior to publishing. | A logged‑in admin can save a draft product. A logged‑in admin can finish the content later. | |
+| As a site user I can view reviews on an individual product. | Given one or more user comments, the user can view them. Admin can also view them. | |
+| As a site user I can leave reviews and upload photos on a product. | Comments require admin approval. Approved comments appear on the product page. | |
+| As a site user I can modify or delete my review on a product. | A logged‑in user can modify their own comments. A logged‑in user can delete their own comments. | |
+| As a site admin I can approve/disapprove reviews to filter objectionable comments. | Admin can approve a comment. Admin can un‑approve a comment. | |
+| As a site user, I can click on the About link and read about the site. | When the About link is clicked, the About page is displayed. | |
+| As a site admin, I can create or update the About page. | The About app is visible in the admin panel. The About app is accessible to admin users. | |
+| As a site user I can fill in a contact form so that I can submit a message to the site owner. | Contact form submits successfully and user receives feedback. | |
+| As a site admin I can mark contact messages as "read". | Admin can mark messages as read. | |
+| As a site user I can register an account so that I can review products. | User can register with an email and log in. Logged‑in users can comment. | |
+| As a site user/admin I can log in so that I can access all available content. | User/admin can log in and see the full range of available menus. | |
+| As a site user/admin I can log out so that I can leave the site safely. | User/admin can log out successfully. | |
+| As a site user I want to be able to search for specific products. | Search returns relevant product results. | |
+| As a site user I want to be able to order products. | User can place an order successfully. | |
+| As a site user I want to be able to save favorite products and comment on them. | User can save favorites and comment on saved products. | |
+
 ### Lighthouse
 The site was tested using Lighthouse with the following results:
 
