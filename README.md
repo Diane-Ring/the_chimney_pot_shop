@@ -25,9 +25,9 @@ A responsive site layout enables easy navigation on all devices.
 
 Font Awesome icons were used for the site icons, e.g. the social media icons in the footer.
 
-**Garamond** font was used for the primary headers and titles.
+**Lato** font was used for the primary headers and titles.
 
-**Roboto** font was used for all other secondary text.
+Browser default font was used for all other secondary text.
 
 ## Colour Palette
 
@@ -188,7 +188,7 @@ The site was tested on the following browser for compatibility:
 |   Responsivity	|  responsive to all media sizes 	|  success 	|
 |   Open new page from social media links	|  opens social media page 	|  success 	|
 
-## User Story Test Table (must-haves only)
+### User Story Test Table (must-haves only)
 | **User Story** | **Expected Result** | **Actual Result** |
 |----------------|---------------------|-------------------|
 | As a site admin I want to be able to create, edit and delete products. | When logged in as admin, products can be created, edited, and deleted from the admin page. |  success 	|
@@ -256,8 +256,8 @@ In addition to the built in Bootstrap responsive CSS, Chrome dev tools were used
 ## Accessibility Testing
 
 Accessibility Checker (https://www.accessibilitychecker.org/) was used to test accessibility to UK standards. The tool offers two free tests before requiring a paid plan subscription.
-Both the home page and product page failed on not having `<h>`Titles`</h>`.  These titles have now been added.
-WACG contrast checker was used to check contrast of text and background colours.
+Both the home page and product page failed on not having `<h>`Titles`</h>`.  These titles have now been added.<br>
+WACG contrast checker was used to check contrast compliance of text and background colours. These passed at AA standard.
 
 
 ## AI Usage and Methodology
