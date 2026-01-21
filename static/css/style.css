@@ -77,10 +77,10 @@ body {
 }
 
 .card-img-top {
-    height: 100%;
-    width: 100%;
+    height: 75%;
+    width: 75%;
     object-fit: contain;
-    object-position: center;
+    object-position: top;
 }
 
 .image-flash {
@@ -120,6 +120,8 @@ body {
 .masthead-image {
     position: relative;
     overflow: hidden;
+    background-size: contain;
+    background-position: center;
 }
 
 .masthead-image:after {
