@@ -10,8 +10,8 @@
         <div class="col-12 mt-3 text-center">
             <div class="row">
                 {% for product in product_list %}
-                <div class="col-md-4">
-                    <div class="card mb-10">
+                <div class="col-md-4 d-flex">
+                    <div class="card mb-4 w-100">
                         <div class="card-body">
                             <div class="image-container">
                                 {% if "placeholder" in product.featured_image.url %}
@@ -23,8 +23,6 @@
                             <a href="{% url 'product_detail' product.slug%}" class="product-link">
                                 <h2 class="card-title">{{ product.title }}</h2>
                             </a>
-
-                            <hr>
                         </div>
                     </div>
                 </div>
