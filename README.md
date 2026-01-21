@@ -188,27 +188,19 @@ The site was tested on the following browser for compatibility:
 |   Responsivity	|  responsive to all media sizes 	|  success 	|
 |   Open new page from social media links	|  opens social media page 	|  success 	|
 
-## User Story Test Table
+## User Story Test Table (must-haves only)
 | **User Story** | **Expected Result** | **Actual Result** |
 |----------------|---------------------|-------------------|
-| As a site admin I want to be able to create, edit and delete products. | When logged in as admin, products can be created, edited, and deleted from the admin page. | |
-| As a site user, I can view a list of products and click on the product I want to view. | A list of products is displayed on the front page. Multiple products are listed and paginated. | |
-| As a site user, I can click on a product so that I can see an image, read the description and see the price. | When a product title is clicked, a detailed view of the individual product is displayed. | |
-| As a site admin I can create draft products so that I can finish writing the content later, prior to publishing. | A logged‑in admin can save a draft product. A logged‑in admin can finish the content later. | |
-| As a site user I can view reviews on an individual product. | Given one or more user comments, the user can view them. Admin can also view them. | |
-| As a site user I can leave reviews and upload photos on a product. | Comments require admin approval. Approved comments appear on the product page. | |
-| As a site user I can modify or delete my review on a product. | A logged‑in user can modify their own comments. A logged‑in user can delete their own comments. | |
-| As a site admin I can approve/disapprove reviews to filter objectionable comments. | Admin can approve a comment. Admin can un‑approve a comment. | |
-| As a site user, I can click on the About link and read about the site. | When the About link is clicked, the About page is displayed. | |
-| As a site admin, I can create or update the About page. | The About app is visible in the admin panel. The About app is accessible to admin users. | |
-| As a site user I can fill in a contact form so that I can submit a message to the site owner. | Contact form submits successfully and user receives feedback. | |
-| As a site admin I can mark contact messages as "read". | Admin can mark messages as read. | |
-| As a site user I can register an account so that I can review products. | User can register with an email and log in. Logged‑in users can comment. | |
-| As a site user/admin I can log in so that I can access all available content. | User/admin can log in and see the full range of available menus. | |
-| As a site user/admin I can log out so that I can leave the site safely. | User/admin can log out successfully. | |
-| As a site user I want to be able to search for specific products. | Search returns relevant product results. | |
-| As a site user I want to be able to order products. | User can place an order successfully. | |
-| As a site user I want to be able to save favorite products and comment on them. | User can save favorites and comment on saved products. | |
+| As a site admin I want to be able to create, edit and delete products. | When logged in as admin, products can be created, edited, and deleted from the admin page. |  success 	|
+| As a site user, I can view a list of products and click on the product I want to view. | A list of products is displayed on the front page. Multiple products are listed and paginated. |  success  |
+| As a site user, I can click on a product so that I can see an image, read the description and see the price. | When a product title is clicked, a detailed view of the individual product is displayed. |  success  |
+| As a site admin I can create draft products so that I can finish writing the content later, prior to publishing. | A logged‑in admin can save a draft product. A logged‑in admin can finish the content later. |  success  |
+| As a site user I can view reviews on an individual product. | Given one or more user reviews, the user can view them. Admin can also view them. |  success  |
+| As a site user I can leave reviews on a product. | Reviews appear on the product page. |  success  |
+| As a site user I can modify or delete my review on a product. | A logged‑in user can modify their own review. A logged‑in user can delete their own review. |   success  |
+| As a site user I can register an account so that I can review products. | User can register with an email and log in. Logged‑in users can leave reviews. |   success 	|
+| As a site user/admin I can log in so that I can access all available content. | User/admin can log in and see the full range of available menus. |   success 	|
+| As a site user/admin I can log out so that I can leave the site safely. | User/admin can log out successfully. |   success 	|
 
 ### Lighthouse
 The site was tested using Lighthouse with the following results:
@@ -238,7 +230,7 @@ The solution to the issues that are slowing the performance can be investigated 
 
 Performance can also be affected by internet traffic routing, performance of the device being used, browser extensions, and antivirus software, all of which are out of the control of the website.
 
-However, the site was tested again the next day and had an improved Performance score of 97%.  The issues raised in the first test will still be looked at.
+However, the site was tested again the next day and had an improved Performance score of 97%.  The issues raised in the first test will still be looked into.
 
 ![Improved lighthouse Test](assets/images/improved_lighthouse_score.jpg)
 
@@ -264,7 +256,7 @@ In addition to the built in Bootstrap responsive CSS, Chrome dev tools were used
 ## Accessibility Testing
 
 ![accessibilitychecker](https://www.accessibilitychecker.org/)was used to test accessibility to UK standards, they offer two free tests before you need to sign up to a plan.<br>
-Both the home page and product page failed on not having `<h>`Titles`</h>`.
+Both the home page and product page failed on not having `<h>`Titles`</h>`.  These were added.
 
 ## AI Usage and Methodology
 
