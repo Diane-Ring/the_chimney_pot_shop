@@ -255,8 +255,10 @@ In addition to the built in Bootstrap responsive CSS, Chrome dev tools were used
     
 ## Accessibility Testing
 
-![accessibilitychecker](https://www.accessibilitychecker.org/)was used to test accessibility to UK standards, they offer two free tests before you need to sign up to a plan.<br>
-Both the home page and product page failed on not having `<h>`Titles`</h>`.  These were added.
+Accessibility Checker (https://www.accessibilitychecker.org/) was used to test accessibility to UK standards. The tool offers two free tests before requiring a paid plan subscription.
+Both the home page and product page failed on not having `<h>`Titles`</h>`.  These titles have now been added.
+WACG contrast checker was used to check contrast of text and background colours.
+
 
 ## AI Usage and Methodology
 
