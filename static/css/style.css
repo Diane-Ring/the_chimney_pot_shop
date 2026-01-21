@@ -9,6 +9,18 @@ body {
     color: #4A4A4F;
 }
 
+@media (max-width: 576px) {
+    .navbar-brand h1 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .navbar-brand h1 {
+        font-size: 1.3rem;
+    }
+}
+
 .thin {
     font-weight: 300;
 }
@@ -28,6 +40,27 @@ body {
 .card {
     border: none;
     background-color: transparent;
+}
+
+.card-title {
+    min-height: 3rem;
+    display: flex;
+    align-items: flex-end;
+    margin: 0;
+}
+
+.card {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .image-container {
