@@ -34,7 +34,7 @@
                 {% if user.is_staff %}
                 <div class="d-flex gap-2">
                 <a class="btn btn-signup w-25" href="{% url 'product_edit' product.slug %}">Edit</a>
-                <a class="btn btn-signup w-25" href="{% url 'product_delete' product.slug %}">Delete</a>
+                <a class="btn btn-signup btn-productdelete w-25" href="{% url 'product_delete' product.slug %}">Delete</a>
                 </div>
                 {% endif %}
             </div>
@@ -72,8 +72,8 @@
           </div>
           {% if user.is_authenticated and review.author == user %}
           <div class="d-flex gap-2">
-          <button class="btn btn-signup w-25" review_id="{{ review.id }}">Edit</button>
-          <button class="btn btn-signup w-25" review_id="{{ review.id }}">Delete</button>
+          <button class="btn btn-signup btn-edit w-100" review_id="{{ review.id }}">Edit</button>
+          <button class="btn btn-signup btn-productdelete w-100" review_id="{{ review.id }}">Delete</button>
           </div>
           {% endif %}
         </div>
@@ -118,10 +118,10 @@
         This action cannot be undone.
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary"
+        <button type="button" class="btn btn-signup"
           data-bs-dismiss="modal">Close</button>
         <a id="deleteConfirm" href="#" class="btn
-          btn-danger">Delete</a>
+          btn-delete">Delete</a>
       </div>
     </div>
   </div>

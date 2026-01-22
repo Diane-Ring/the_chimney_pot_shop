@@ -217,9 +217,20 @@ body {
 
 .btn-delete {
     color: #E8E3DA;
-    background: #E84610;
+    background: #8b3a2b;
 }
 
+.btn-productdelete {
+    color: #E8E3DA;
+    background: #8b3a2b;
+    font-weight: bold;
+}
+
+.btn-productdelete:hover,
+.btn-productdelete:active {
+    background-color: #B5543A;
+    color: #2B2B2B;
+}
 .btn-like:hover,
 .btn-like:active {
     color: #E84610;

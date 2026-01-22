@@ -5,8 +5,8 @@
   <p>Are you sure you want to delete "{{ product.title }}"?</p>
   <form method="post">
     {% csrf_token %}
-    <button class="btn btn-danger" type="submit">Delete</button>
-    <a class="btn btn-secondary" href="{% url 'product_detail' product.slug %}">Cancel</a>
+    <button class="btn btn-productdelete" type="submit">Delete</button>
+    <a class="btn btn-signup" href="{% url 'product_detail' product.slug %}">Cancel</a>
   </form>
 </div>
 {% endblock %}
