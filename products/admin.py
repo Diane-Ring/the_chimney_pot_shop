@@ -13,6 +13,6 @@ class ProductAdmin(SummernoteModelAdmin):
     prepopulated_fields = {'slug': ('title',)}
     summernote_fields = ('content',)
 
-# Register you models here.
+# Register your models here.
 
 admin.site.register(Review)

@@ -5,10 +5,8 @@ from django.http import HttpResponseRedirect
 from django.contrib.auth.decorators import login_required, user_passes_test
 from django.shortcuts import render, redirect
 from django.utils.text import slugify
-from .forms import ProductForm
-from .models import Product
+from .forms import ProductForm, ReviewForm
 from .models import Product, Review
-from .forms import ReviewForm
 
 #class HomePage(TemplateView):
 """
@@ -110,7 +108,7 @@ def is_admin(user):
 
 @login_required
 @user_passes_test(is_admin)
-def add_product(request):
+def product_add(request):
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
@@ -125,4 +123,30 @@ def add_product(request):
             'title': '',
             'content': '',
         })
-    return render(request, 'products/add_product.html', {'form': form})
+    return render(request, 'products/product_add.html', {'form': form})
+
+@login_required
+@user_passes_test(is_admin)
+def product_edit(request, slug):
+    product = get_object_or_404(Product, slug=slug)
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES, instance=product)
+        if form.is_valid():
+            obj = form.save(commit=False)
+            obj.slug = slugify(obj.title)
+            obj.save()
+            messages.success(request, "Product updated.")
+            return redirect('product_detail', slug=obj.slug)
+    else:
+        form = ProductForm(instance=product)
+    return render(request, 'products/product_edit.html', {'form': form, 'product': product})
+
+@login_required
+@user_passes_test(is_admin)
+def product_delete(request, slug):
+    product = get_object_or_404(Product, slug=slug)
+    if request.method == 'POST':
+        product.delete()
+        messages.success(request, "Product deleted.")
+        return redirect('home')
+    return render(request, 'products/product_confirm_delete.html', {'product': product})

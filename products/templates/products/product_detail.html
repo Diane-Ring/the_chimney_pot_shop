@@ -10,6 +10,8 @@
             <div class="col-md-6 masthead-text">
                 <!-- Product title goes in these h1 tags -->
                 <h1 class="product-title">{{ product.title }}</h1>
+
+                
             </div>
             <div class="col-md-6 masthead-image">
               {% if "placeholder" in product.featured_image.url %}
@@ -31,9 +33,14 @@
                 <p class="card-text">
                     {{ product.content | safe }}
                 </p>
+                {% if user.is_staff %}
+                <a class="btn btn-sm btn-outline-primary" href="{% url 'product_edit' product.slug %}">Edit</a>
+                <a class="btn btn-sm btn-outline-danger" href="{% url 'product_delete' product.slug %}">Delete</a>
+                {% endif %}
             </div>
         </div>
     </div>
+
     <!-- Displaying count of reviews -->
   <div class="row">
     <div class="col-12">
@@ -119,6 +126,11 @@
 </div>
 
 {% endblock content %}
+
+{% if user.is_staff %}
+  <a class="btn btn-sm btn-outline-primary" href="{% url 'product_edit' product.slug %}">Edit</a>
+  <a class="btn btn-sm btn-outline-danger" href="{% url 'product_delete' product.slug %}">Delete</a>
+{% endif %}
 
 {% block extras %}
 <script src="{% static 'js/reviews.js' %}"></script>
