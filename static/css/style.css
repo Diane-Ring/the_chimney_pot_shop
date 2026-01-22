@@ -45,13 +45,11 @@ body {
 }
 
 /* Navigation styling */
-.nav-item {
-    /* Add your styles here */
-}
+
 
 .nav-link {
-    color: #2B2B2B !important;
-    font-weight: 500;
+    color: #B5543A!important;
+    
 }
 
 .nav-link:hover {

@@ -9,9 +9,7 @@
         <div class="row g-0">
             <div class="col-md-6 masthead-text">
                 <!-- Product title goes in these h1 tags -->
-                <h1 class="product-title">{{ product.title }}</h1>
-
-                
+                <h1 class="product-title">{{ product.title }}</h1>                
             </div>
             <div class="col-md-6 masthead-image">
               {% if "placeholder" in product.featured_image.url %}
@@ -34,8 +32,10 @@
                     {{ product.content | safe }}
                 </p>
                 {% if user.is_staff %}
-                <a class="btn btn-sm btn-outline-primary" href="{% url 'product_edit' product.slug %}">Edit</a>
-                <a class="btn btn-sm btn-outline-danger" href="{% url 'product_delete' product.slug %}">Delete</a>
+                <div class="d-flex gap-2">
+                <a class="btn btn-signup w-25" href="{% url 'product_edit' product.slug %}">Edit</a>
+                <a class="btn btn-signup w-25" href="{% url 'product_delete' product.slug %}">Delete</a>
+                </div>
                 {% endif %}
             </div>
         </div>
@@ -71,8 +71,10 @@
             {{ review.body | linebreaks }}
           </div>
           {% if user.is_authenticated and review.author == user %}
-          <button class="btn btn-delete" review_id="{{ review.id }}">Delete</button>
-          <button class="btn btn-edit" review_id="{{ review.id }}">Edit</button>
+          <div class="d-flex gap-2">
+          <button class="btn btn-signup w-25" review_id="{{ review.id }}">Edit</button>
+          <button class="btn btn-signup w-25" review_id="{{ review.id }}">Delete</button>
+          </div>
           {% endif %}
         </div>
         <!-- Our for loop ends here -->
