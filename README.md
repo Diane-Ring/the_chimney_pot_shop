@@ -300,6 +300,8 @@ WACG contrast checker was used to check contrast compliance of text and backgrou
 
 ## Deployment
 
+### Heroku
+
 The site was deployed to Heroku from the main branch of the repository early in the development stage for continuous deployment and checking.
 
 The Heroku app is setup with 3 environment variables, replacing the environment variables stored in env.py (which doesn't get pushed to GitHub).
@@ -323,6 +325,98 @@ Once the app setup is complete, click on the Deploy tab and:
 ![Heroku Deployment](assets/images/heroku_deployment.jpg)
 
 The live link can be found [_here_](https://the-chimney-pot-shop-3d063a689bfe.herokuapp.com/) Ctrl+Click/Middle-click to open in a new tab.
+
+### Local Development Setup
+
+#### Prerequisites
+- Python 3.12 installed
+- Visual Studio Code installed
+- Git installed
+
+#### Step-by-Step Instructions
+
+1. **Clone the Repository**
+   bash
+   git clone https://github.com/yourusername/the-chimney-pot-shop.git
+   cd the-chimney-pot-shop
+   
+
+2. **Create a Virtual Environment**
+   bash
+   python -m venv venv
+   
+
+3. **Activate the Virtual Environment**
+   - **Windows:**
+     bash
+     venv\Scripts\activate
+     
+   - **Mac/Linux:**
+     bash
+     source venv/bin/activate
+     
+
+4. **Install Dependencies**
+   bash
+   pip install -r requirements.txt
+   
+
+5. **Create Environment Variables File**
+   - Create a file called `env.py` in the root directory
+   - Add the following (replace with your own values):
+     python
+
+     import os
+     
+     os.environ.setdefault("SECRET_KEY", "your-secret-key-here")
+     os.environ.setdefault("DATABASE_URL", "your-database-url-here")
+     os.environ.setdefault("CLOUDINARY_URL", "your-cloudinary-url-here")
+     os.environ.setdefault("DEBUG", "True")
+     
+
+6. **Check Django Settings**
+Make sure:
+
+- manage.py exists in the project root
+- settings.py is correctly configured
+- DEBUG = True (for local use)
+
+7. **Run Database Migrations**
+   bash
+   python manage.py migrate
+   
+
+8. **Create a Superuser (Admin Account)**
+   bash
+   python manage.py createsuperuser
+   
+   Follow the prompts to create your admin account.
+
+9. **Collect Static Files**
+   bash
+   python manage.py collectstatic
+   
+
+10. **Run the Development Server**
+   bash
+   python manage.py runserver
+   
+
+11. **Access the Site**
+    - Open your browser and go to: `http://127.0.0.1:8000/`
+    - Admin panel: `http://127.0.0.1:8000/admin/`
+
+#### Stopping the Server
+Press `Ctrl+C` in the terminal to stop the development server.
+
+#### Common problems
+
+- Command not found: Python is not installed or not in PATH
+- Module not found: Virtual environment not activated
+- Port already in use: Stop other servers or run
+
+bash
+python manage.py runserver 8001
 
 ## Credits
 
