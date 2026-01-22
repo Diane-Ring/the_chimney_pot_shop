@@ -127,11 +127,6 @@
 
 {% endblock content %}
 
-{% if user.is_staff %}
-  <a class="btn btn-sm btn-outline-primary" href="{% url 'product_edit' product.slug %}">Edit</a>
-  <a class="btn btn-sm btn-outline-danger" href="{% url 'product_delete' product.slug %}">Delete</a>
-{% endif %}
-
 {% block extras %}
 <script src="{% static 'js/reviews.js' %}"></script>
 {% endblock %}
