@@ -72,8 +72,8 @@
           </div>
           {% if user.is_authenticated and review.author == user %}
           <div class="d-flex gap-2">
-          <button class="btn btn-signup btn-edit w-100" review_id="{{ review.id }}">Edit</button>
-          <button class="btn btn-signup btn-productdelete w-100" review_id="{{ review.id }}">Delete</button>
+          <button type="button" class="btn btn-signup btn-edit w-100" review_id="{{ review.id }}">Edit</button>
+          <button type=button class="btn btn-signup btn-delete w-100" review_id="{{ review.id }}">Delete</button>
           </div>
           {% endif %}
         </div>
@@ -120,8 +120,7 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-signup"
           data-bs-dismiss="modal">Close</button>
-        <a id="deleteConfirm" href="#" class="btn
-          btn-delete">Delete</a>
+        <a id="deleteConfirm" href="#" class="btn btn-productdelete btn-delete">Delete</a>
       </div>
     </div>
   </div>
