@@ -7,8 +7,8 @@
     <div class="row">
 
 {% if user.is_staff %}
-<div class="text-center mb-4">
-    <a href="{% url 'product_add' %}" class="btn btn-success">+ Add Product</a>
+<div class="text-end mb-4">
+    <a href="{% url 'product_add' %}" class="btn btn-signup">+ Add Product</a>
 </div>
 {% endif %}
 
@@ -27,7 +27,7 @@
                                 {% endif %}
                             </div>
                             <a href="{% url 'product_detail' product.slug%}" class="product-link">
-                                <h2 class="card-title">{{ product.title }}</h2>
+                                <h2 class="card-title, text-center">{{ product.title }}</h2>
                             </a>
                         </div>
                     </div>

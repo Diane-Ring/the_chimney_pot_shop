@@ -1,9 +1,9 @@
 body {
-    background-color: #F9FAFC;
+    background-color: #E8E3DA;
 }
 
 .brand {
-    font-family: Lato, sans-serif;
+    font-family: 'Lato', serif;
     font-size: 1.4rem;
     font-weight: 700;
     color: #4A4A4F;
@@ -21,12 +21,19 @@ body {
     }
 }
 
+/* Desktop screens (769px and up) */
+@media (min-width: 769px) {
+    .navbar-brand h1 {
+        font-size: 1.5rem;
+    }
+}
+
 .thin {
     font-weight: 300;
 }
 
 .light-bg {
-    background-color: #fff;
+    background-color: #E8E3DA;
 }
 
 .dark-bg {
@@ -34,7 +41,27 @@ body {
 }
 
 .main-bg {
-    background-color: #F9FAFC;
+    background-color: #E8E3DA;
+}
+
+/* Navigation styling */
+.nav-item {
+    /* Add your styles here */
+}
+
+.nav-link {
+    color: #2B2B2B !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #B5543A !important;
+    text-decoration: underline;
+}
+
+.nav-link.active {
+    color: #B5543A !important;
+    font-weight: bold;
 }
 
 .card {
@@ -47,6 +74,7 @@ body {
 
 .card-title {
     min-height: 3rem;
+    text-align: center;
     display: flex;
     align-items: flex-end;
     margin: 0;
@@ -97,7 +125,7 @@ body {
 }
 
 .author {
-    color: white;
+    color: #E8E3DA;
     margin: 4px;
     text-transform: uppercase;
 }
@@ -113,7 +141,7 @@ body {
 
 .masthead-text {
     background-color: #4A5A5F;
-    color: white;
+    color: #E8E3DA;
     position: relative;
 }
 
@@ -155,24 +183,26 @@ body {
 
 .product-subtitle {
     margin-left: 5%;
-    color: lightgray;
+    color: #4A5A5F;
 }
 
 .btn-signup,
 .btn-edit {
-    background-color: #188181;
-    color: #fff;
+    background-color: #4A5A5F;
+    color: #E8E3DA;
+    font-weight: bold;
 }
 
 .btn-signup:hover,
 .btn-signup:active {
-    background-color: #fff;
-    color: #23BBBB;
+    background-color: #B5543A;
+    color: #2B2B2B;
 }
 
 .link {
-    color: #23BBBB;
+    color: #B5543A;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .link:hover,
@@ -188,7 +218,7 @@ body {
 }
 
 .btn-delete {
-    color: #fff;
+    color: #E8E3DA;
     background: #E84610;
 }
 
@@ -197,6 +227,18 @@ body {
     color: #E84610;
     background: transparent;
     border: none;
+}
+
+.page-link {
+    background-color: #4A5A5F;
+    color: #E8E3DA;
+    font-weight: bold;
+    border: none;
+}
+
+.page-link:hover {
+    background-color: #B5543A;
+    color: #2B2B2B;
 }
 
 .faded {
@@ -208,7 +250,7 @@ body {
 }
 
 body {
-    background-color: #F9FAFC;
+    background-color: #E8E3DA;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
