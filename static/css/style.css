@@ -206,3 +206,18 @@ body {
 .approval {
     color: rgb(222, 146, 168);
 }
+
+body {
+    background-color: #F9FAFC;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    margin-top: auto;
+}
