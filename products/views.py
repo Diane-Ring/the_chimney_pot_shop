@@ -2,6 +2,11 @@ from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic
 from django.contrib import messages
 from django.http import HttpResponseRedirect
+from django.contrib.auth.decorators import login_required, user_passes_test
+from django.shortcuts import render, redirect
+from django.utils.text import slugify
+from .forms import ProductForm
+from .models import Product
 from .models import Product, Review
 from .forms import ReviewForm
 
@@ -100,4 +105,24 @@ def review_delete(request, slug, review_id):
 
     return HttpResponseRedirect(reverse('product_detail', args=[slug]))
 
+def is_admin(user):
+    return user.is_staff
 
+@login_required
+@user_passes_test(is_admin)
+def add_product(request):
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES)
+        if form.is_valid():
+            product = form.save(commit=False)
+            if not product.slug:
+                product.slug = slugify(product.title)
+            product.save()
+            return redirect('home')
+    else:
+        form = ProductForm(initial={
+            'status': 1,  # Set default status to Published
+            'title': '',
+            'content': '',
+        })
+    return render(request, 'products/add_product.html', {'form': form})
