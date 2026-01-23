@@ -43,9 +43,9 @@ The pagination will also change as more products are added.  It has been set at 
 
 ![Home page wireframe](assets/images/Homepage_wireframe.jpg)
 
-## product Detail Page Wireframe Design
+## Product Detail Page Wireframe Design
 
-![product detail wireframe](assets/images/product_wireframe.jpg)
+![product detail wireframe](assets/images/Product_wireframe.jpg)
 
 ## User Stories
 
@@ -176,13 +176,13 @@ However, the site also has the functionality to Create, Update and Delete produc
 In order to do this the site owner, or staff member would login using the admin credentials
 <br>
 
-The admin will then have access to this Add New Product Form:
+The admin will then have access to this Add New Product Form:<br>
 ![Add New product](assets/images/add_new_product_form.jpg)
 
 Admin can then add product title, image and content.  The default is set to 'Published', but can be changed to 'draft' if the admin doesn't want the product published straight away.<br><br>
 If there is no image available, a placeholder 'IMAGE COMING SOON' is displayed.<br>
 
-Admin can also update and delete any product. When logged in as admin, this displays at the bottom of each product detail page.
+Admin can also update and delete any product. When logged in as admin, this displays at the bottom of each product detail page.<br>
 ![Edit and Delete product](assets/images/edit_delete_product.jpg)
 
 Edit brings up the same form as add new product.<br>
@@ -351,8 +351,8 @@ In order to create a Heroku app:
    - CLOUDINARY_URL - the Cloudinary url for your image store
 
 Once the app setup is complete, click on the Deploy tab and:
-1. connect to the required GitHub account
-2. select the repository to deploy from
+1. Connect to the required GitHub account
+2. Select the repository to deploy from
 3. Click the Deploy Branch button to start the deployment.
 4. Once deployment finishes the app can be launched by clicking on the view button.
 
@@ -366,80 +366,68 @@ The live link can be found [_here_](https://the-chimney-pot-shop-3d063a689bfe.he
 - Python 3.12 installed
 - Visual Studio Code installed
 - Git installed
+- Use bash terminal
 
 #### Step-by-Step Instructions
 
-1. **Clone the Repository**
-   bash
+1. **Clone the Repository**<br>
+
    git clone https://github.com/yourusername/the-chimney-pot-shop.git
    cd the-chimney-pot-shop
    
 
-2. **Create a Virtual Environment**
-   bash
+2. **Create a Virtual Environment**<br>
    python -m venv venv
    
 
 3. **Activate the Virtual Environment**
    - **Windows:**
-     bash
-     venv\Scripts\activate
-     
+     source .ven/Scripts/activate
+    
    - **Mac/Linux:**
-     bash
-     source venv/bin/activate
-     
+     source venv/bin/activate  
 
 4. **Install Dependencies**<br>
-   bash<br>
    pip install -r requirements.txt
    
-
 5. **Create Environment Variables File**
    - Create a file called `env.py` in the root directory
    - **Make sure `env.py` is listed in your `.gitignore` file** (to prevent sensitive data being pushed to GitHub)
 
    - Add the following (replace with your own values):<br>
-     python
 
      import os
      
-     os.environ.setdefault("SECRET_KEY", "your-secret-key-here")
-     os.environ.setdefault("DATABASE_URL", "your-database-url-here")
-     os.environ.setdefault("CLOUDINARY_URL", "your-cloudinary-url-here")
-     os.environ.setdefault("DEBUG", "True")
+     os.environ.setdefault("SECRET_KEY", "your-secret-key-here")<br>
+     os.environ.setdefault("DATABASE_URL", "your-database-url-here")<br>
+     os.environ.setdefault("CLOUDINARY_URL", "your-cloudinary-url-here")<br>
+     os.environ.setdefault("DEBUG", "True")<br>
      
 
 6. **Check Django Settings**<br>
 Make sure:
-
-- manage.py exists in the project root
-- settings.py is correctly configured
-- DEBUG = True (for local use)
+   - manage.py exists in the project root
+   - settings.py is correctly configured
+   - DEBUG = True (for local use)
 
 7. **Run Database Migrations**<br>
-   bash<br>
    python manage.py migrate
    
-
 8. **Create a Superuser (Admin Account)**<br>
-   bash<br>
    python manage.py createsuperuser
    
    Follow the prompts to create your admin account.
 
 9. **Collect Static Files**<br>
-   bash<br>
    python manage.py collectstatic --noinput
    
 
 10. **Run the Development Server**<br>
-   bash<br>
    python manage.py runserver
    
 
 11. **Access the Site**
-    - In the terminal press `CTRL` and click on the http: link shown.
+    - In the terminal press `CTRL` and click on the http: link shown. <br>OR
     - Open your browser and go to: `http://127.0.0.1:8000/`
     - Admin panel: `http://127.0.0.1:8000/admin/`
 
@@ -450,9 +438,7 @@ Press `Ctrl+C` in the terminal to stop the development server.
 
 - Command not found: Python is not installed or not in PATH
 - Module not found: Virtual environment not activated
-- Port already in use: Stop other servers or run
-
-bash<br>
+- Port already in use: Stop other servers or run:<br>
 python manage.py runserver 8001
 
 ## Credits
