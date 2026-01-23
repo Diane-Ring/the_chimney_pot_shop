@@ -4,7 +4,7 @@
 
 This project is to develop a retail-focused website for a chimney pot specialist, designed to showcase products, provide practical information, and support customers in choosing the correct chimney pots for their property.
 
-From a user perspective, visitors should be able to browse the full range of chimney pots, view detailed product information and specifications, and access guidance on suitability, installation, and maintenance. In future iterations, users may also be able to make enquiries or purchases directly through the site.
+From a user perspective, visitors can browse the full range of chimney pots, view detailed product information and specifications.  Users can leave reviews on any product provided they have signed up and logged in. . In future iterations users will also be able to access guidance on suitability, installation, and maintenance, make enquiries or purchases directly through the site.
 
 In terms of design, a clean and minimal approach is taken to allow product photography and technical detail to take priority. A cohesive colour palette and consistent typography will be used throughout the site to reinforce the brand's focus on quality, durability, and traditional craftsmanship. The layout is designed to be clear and intuitive, enhancing usability and ensuring customers can easily find the information they need with confidence.
 
@@ -43,41 +43,39 @@ The pagination will also change as more products are added.  It has been set at 
 
 ![Home page wireframe](assets/images/Homepage_wireframe.jpg)
 
-## Product Detail Page Wireframe Design
+## product Detail Page Wireframe Design
 
-![Product detail wireframe](assets/images/Product_wireframe.jpg)
+![product detail wireframe](assets/images/product_wireframe.jpg)
 
 ## User Stories
 
 **As a site admin I want to be able to create, edit and delete products.**
-- When logged in as admin product can be created, edited and deleted from the admin page.
+- When logged in as admin, product can be created, edited and deleted from the admin page.
+- When logged in as admin, product can be created, edited and deleted from the home page.
 
-**As a site user, I can view a list of products and click on the Product I want to view.**
-- A list of Products is displayed on the front page
-- Multiple Products are listed and paginated
+**As a site user, I can view a list of products and click on the product I want to view.**
+- A list of products is displayed on the front page
+- Multiple products are listed and paginated
 
-**As a Site User, I can click on a Product so that I can see an image, read the description and see the price.**
-- When a Product title is clicked, a detailed view of the individual Product is displayed.
+**As a Site User, I can click on a product so that I can see an image, read the description and see the price.**
+- When a product title is clicked, a detailed view of the individual product is displayed.
 
-**As a Site Admin I can create draft Products so that I can finish writing the content later, prior to publishing.**
-- As a logged in Admin, a draft Product item can be saved.
-- As a logged in Admin the content can be finished at a later time.
+**As a Site Admin I can create draft products so that I can finish writing the content later, prior to publishing.**
+- As a logged in admin, a draft product item can be saved.
+- As a logged in admin the content can be finished at a later time.
 
-**As a Site User I can view reviews on an individual Product**
-- Given one or more user comments the user can view them.
-- Given one or more user comments the admin can view them.
+**As a Site User I can view reviews on an individual product**
+- Given one or more user reviews the user can view them without being logged in.
 
-**As a Site User I can leave reviews and upload photos on a Product**
-- Comments need to be approved by an admin user
-- Approved comments are listed on the individual Product page
+**As a logged in Site User I can leave reviews on a product**
+- Reviews are listed on the individual product page
 
-**As a Site User I can modify or delete my review on a Product**
-- A logged in user can modify their own comments
-- A logged in user can delete their own comments
+**As a Site User I can modify or delete my review on a product**
+- A logged in user can modify their own reviews
+- A logged in user can delete their own reviews
 
-**As a site admin I can approve/disapprove reviews in order to filter out objectionable comments**
-- Admin can approve a comment
-- Admin can un-approve a comment
+**As a site admin I can view reviews in order to filter out objectionable reviews**
+- Admin can delete a review
 
 **As a Site User, I can click on the About link and read about the site.**
 - When the About link is clicked, the about page is displayed.
@@ -92,9 +90,9 @@ The pagination will also change as more products are added.  It has been set at 
 **As a Site Admin I can mark contact messages as "read".**
 - Admin can mark messages as read
 
-**As a Site User I can register an account so that I can review Products.**
+**As a Site User I can register an account so that I can review products.**
 - Given an email a user can register an account and log in.
-- When the user is logged in they can comment.
+- When the user is logged in they can write a review.
 
 **As a site user/admin I can login so that I can access all of available content.**
 - User can login and see the full range of available menus.
@@ -118,7 +116,10 @@ Having used the MoSCoW approach to prioritise, 8 were classified as "Must-Have" 
 
 ### Home page
 
-The home page of the site offers users a grid of Products. Users can then click on an individual Product to read the details.
+The home page of the site offers users a grid of products. Users can then click on an individual product to read the details. 
+<br>
+If the product has any reviews, they are shown underneath the product details.
+
 
 ### Navigation Bar
 
@@ -128,34 +129,65 @@ Navigation is provided via a bootstrap navbar, and is fully responsive.
 
 ### The Footer
 
-The page footer is a simple arrangement of 4 social media icons.
+The page footer is a simple arrangement of contact details and 4 social media icons.
 
 ![Footer](assets/images/Footer.jpg)
 
 ### Sign Up
 
-The site has a facility to sign up as a user in order to make, edit or delete your own reviews on Products.
+The site has a facility to sign up as a user in order to make, edit or delete your own reviews on products.
 
 ![Sign Up Form](assets/images/sign_up.jpg)
 
-### Sign In
+### Log In
 
-The site has a facility to sign in, once you have created a user account, in order to make, edit or delete your own reviews on Products.
+The site has a facility to log in, once you have created a user account, in order to make, edit or delete your own reviews on products.
 
-![Sign In Form](assets/images/sign_in.jpg)
+![log In Form](assets/images/sign_in.jpg)
 
-### Sign Out
+### Log Out
 
-The site has a facility for a user to sign out of their account.
+The site has a facility for a user to log out of their account.
 
-![Sign Out Screen](assets/images/sign_out.jpg)
+![log Out Screen](assets/images/sign_out.jpg)
 
-### Admin
+### Add a Review
 
-The site has a facility for designated administrators to sign in, in order to administrate the site via the standard Django admin interface.
+Only when a user is logged in, can they add a review to any published product.<br>
+This form appears at the bottom of the page.<br>
+![Leave a Review](assets/images/leave_review.jpg)
+
+A logged in user can also edit or delete their own reviews.
+![edit and delete Review](assets/images/edit_delete_review.jpg)
+
+![Delete Review](assets/images/delete_review.jpg)
+
+### Admin page
+
+The site has a facility for designated administrators to create a superuser log in, in order to administrate the site via the standard Django admin interface.<br>
+It is from here that all site administration can be done.
 
 ![Django Admin Interface](assets/images/admin_interface_screen.jpg)
 
+However, the site also has the functionality to Create, Update and Delete products on the main site using the 'admin' log in details.
+
+![admin login](assets/images/add_product.jpg)
+
+In order to do this the site owner, or staff member would login using the admin credentials
+<br>
+
+The admin will then have access to this Add New Product Form:
+![Add New product](assets/images/add_new_product_form.jpg)
+
+Admin can then add product title, image and content.  The default is set to 'Published', but can be changed to 'draft' if the admin doesn't want the product published straight away.<br><br>
+If there is no image available, a placeholder 'IMAGE COMING SOON' is displayed.<br>
+
+Admin can also update and delete any product. When logged in as admin, this displays at the bottom of each product detail page.
+![Edit and Delete product](assets/images/edit_delete_product.jpg)
+
+Edit brings up the same form as add new product.<br>
+Delete brings up this form:<br>
+![delete product](assets/images/delete_product.jpg)
 ### Entity Relationship Diagram
 
 The following data structure was created for the project.
@@ -168,7 +200,7 @@ The following data structure was created for the project.
 
 The Django test suite creates an empty database for testing, using the built-in SQLite3 database, ensuring it is independent of the web browser and our live database.<br>
 The key functionality of the review form was tested using an automated test in Django, using test_form.py.<br>
-Using the _setup_ method, we created a superuser and a small product post in our test database, assigned this data as a variable of the _self_ object. Then we were able to test the views using the _get_ method. We then tested a successful review submission on a product using the _post_ method.
+Using the _setup_ method, we created a superuser and a small product post in our test database, assigned this data as a variable of the _self_ object. Then we were able to test the views using the _get_ method. We were then able to test a successful review submission on a product using the _post_ method.
 
 ### Manual Testing
 The site was tested on the following browser for compatibility:
@@ -181,8 +213,10 @@ The site was tested on the following browser for compatibility:
 |   Click Login menu	|  shows login screen 	|  success 	|
 |   Click Logout	|  asks are you sure, with logout button 	|  success 	|
 |   Click individual product post	|  goes to product page 	|  success 	|
-|   Create, edit, delete a personal review	|  can create a review 	|  success 	|
+|   Create a personal review	|  can create a review 	|  success 	|
 |   Edit and delete a personal review	|  can edit and delete own reviews	|  success 	|
+|   Create a new product logged in as admin	|  can create a new product 	|  success 	|
+|   Edit and delete a published product, while logged in as admin	|  can edit and delete products	|  success 	|
 |   Register new account	|  new account is created 	|  success 	|
 |   Access admin interface	|  admin page appears	|  success 	|
 |   Responsivity	|  responsive to all media sizes 	|  success 	|
@@ -250,24 +284,24 @@ In addition to the built in Bootstrap responsive CSS, Chrome dev tools were used
 ![CSS Validation](assets/images/W3C_CSS_validation.jpg)
 
 - Python
-    - Co-pilot checked all python code against PEP8 standards
-![PEP8validation](assets/images/PEP8validation.jpg)
+    - Co-pilot checked all python code against PEP8 standards<br><br>
+![PEP8 validation](assets/images/PEP8validation.jpg)
     
 ## Accessibility Testing
 
 Accessibility Checker (https://www.accessibilitychecker.org/) was used to test accessibility to UK standards. The tool offers two free tests before requiring a paid plan subscription.
 Both the home page and product page failed on not having `<h>`Titles`</h>`.  These titles have now been added.<br>
-WACG contrast checker was used to check contrast compliance of text and background colours. These passed at AA standard.
+WCAG contrast checker was used to check contrast compliance of text and background colours. These passed at AA standard.
 
 
 ## AI Usage and Methodology
 
 ### Overview
-- AI assistance supported debugging, documentation, Django templates, CSS layout, code creation, code optimisation, generate unit tests, and test repairs.
+- AI assistance supported debugging, documentation, Django templates, CSS layout, code creation, code optimisation, generated unit tests, and test repairs.
 - Primary goal: streamline routine edits and debugging while keeping design decisions and reviews manual.
 
 ### Tools
-- GitHub Copilot: chat and inline suggestions used for unit tests, formatting, code fixes, debugging, and documentation structure.
+- GitHub Copilot: chat and inline suggestions were used for unit tests, formatting, code fixes, debugging, and documentation structure.
 
 ### Scope
 - README conversion from HTML to standard Markdown.
@@ -285,7 +319,7 @@ WACG contrast checker was used to check contrast compliance of text and backgrou
 - README.md: Markdown normalization, image alt text, link structure, section layout; planned but user-reverted “AI Usage & Methodology” section and added it manually.
 - base.html: Corrected {% static %} usage, fixed navbar anchor tag, set logo size.
 - index.html: Cleaned duplicate root tags, adjusted Bootstrap columns (2/3/4 per-row), row break logic, pagination block handling.
-- product_detail.html: Removed duplicate DOCTYPE/html, validated structure.
+
 - style.css: Image container centering, .card-title min-height alignment, vendor-prefixed transform details.
 - test_forms.py: Fixed assert syntax.
 - test_views.py: Corrected URL name, removed non-existent model fields, added follow=True for redirects.
@@ -311,9 +345,9 @@ In order to create a Heroku app:
 1. Click on New in the Heroku dashboard, and Create new app from the menu dropdown.
 2. Give your new app a unique name, and choose a region, preferably one that is geographically closest to you.
 3. Click "Create app"
-4. In your app settings, click on "Reveal Config Vars" and add the environment variables for your app. These are:
+4. In your app settings, click on "Reveal Config Vars" and add the environment variables for your app. <br>These are:
    - DATABASE_URL - your database connection string
-   - SECRET_Key - the secret key for your app
+   - SECRET_KEY - the secret key for your app
    - CLOUDINARY_URL - the Cloudinary url for your image store
 
 Once the app setup is complete, click on the Deploy tab and:
@@ -356,14 +390,16 @@ The live link can be found [_here_](https://the-chimney-pot-shop-3d063a689bfe.he
      source venv/bin/activate
      
 
-4. **Install Dependencies**
-   bash
+4. **Install Dependencies**<br>
+   bash<br>
    pip install -r requirements.txt
    
 
 5. **Create Environment Variables File**
    - Create a file called `env.py` in the root directory
-   - Add the following (replace with your own values):
+   - **Make sure `env.py` is listed in your `.gitignore` file** (to prevent sensitive data being pushed to GitHub)
+
+   - Add the following (replace with your own values):<br>
      python
 
      import os
@@ -374,35 +410,36 @@ The live link can be found [_here_](https://the-chimney-pot-shop-3d063a689bfe.he
      os.environ.setdefault("DEBUG", "True")
      
 
-6. **Check Django Settings**
+6. **Check Django Settings**<br>
 Make sure:
 
 - manage.py exists in the project root
 - settings.py is correctly configured
 - DEBUG = True (for local use)
 
-7. **Run Database Migrations**
-   bash
+7. **Run Database Migrations**<br>
+   bash<br>
    python manage.py migrate
    
 
-8. **Create a Superuser (Admin Account)**
-   bash
+8. **Create a Superuser (Admin Account)**<br>
+   bash<br>
    python manage.py createsuperuser
    
    Follow the prompts to create your admin account.
 
-9. **Collect Static Files**
-   bash
-   python manage.py collectstatic
+9. **Collect Static Files**<br>
+   bash<br>
+   python manage.py collectstatic --noinput
    
 
-10. **Run the Development Server**
-   bash
+10. **Run the Development Server**<br>
+   bash<br>
    python manage.py runserver
    
 
 11. **Access the Site**
+    - In the terminal press `CTRL` and click on the http: link shown.
     - Open your browser and go to: `http://127.0.0.1:8000/`
     - Admin panel: `http://127.0.0.1:8000/admin/`
 
@@ -415,7 +452,7 @@ Press `Ctrl+C` in the terminal to stop the development server.
 - Module not found: Virtual environment not activated
 - Port already in use: Stop other servers or run
 
-bash
+bash<br>
 python manage.py runserver 8001
 
 ## Credits
