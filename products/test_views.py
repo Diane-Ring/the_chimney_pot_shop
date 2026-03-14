@@ -31,6 +31,8 @@ class TestProductsViews(TestCase):
         self.client.login(
             username="myUsername", password="myPassword")
         post_data = {
+            'title': 'Solid product',
+            'rating': 4,
             'body': 'This is a test review.'
         }
         response = self.client.post(reverse(
@@ -39,6 +41,6 @@ class TestProductsViews(TestCase):
         # The view redirects after successful post; follow=True should land on 200
         self.assertEqual(response.status_code, 200)
         self.assertIn(
-            b'Review submitted and awaiting approval',
+            b'Review submitted successfully, you can edit or delete your review',
             response.content
         )
