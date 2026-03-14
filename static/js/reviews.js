@@ -1,5 +1,6 @@
 const editButtons = document.getElementsByClassName("btn-edit");
 const reviewText = document.getElementById("id_body");
+const reviewRating = document.getElementById("id_rating");
 const reviewForm = document.getElementById("reviewForm");
 const submitButton = document.getElementById("submitButton");
 const deleteModal = new bootstrap.Modal(document.getElementById("deleteModal"));
@@ -18,7 +19,11 @@ const deleteConfirm = document.getElementById("deleteConfirm");
 for (let button of editButtons) {
     button.addEventListener("click", (e) => {
         let reviewId = e.target.getAttribute("review_id");
+        let ratingValue = document.getElementById(`reviewRating${reviewId}`).innerText.trim();        
         let reviewContent = document.getElementById(`review${reviewId}`).innerText;
+        if (reviewRating) {
+            reviewRating.value = ratingValue;
+        }
         reviewText.value = reviewContent;
         submitButton.innerText = "Update";
         reviewForm.setAttribute("action", `edit_review/${reviewId}`);

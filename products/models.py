@@ -1,6 +1,8 @@
 from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
+from django.db.models import Avg
+from django.core.validators import MinValueValidator, MaxValueValidator
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
@@ -18,6 +20,11 @@ class Product(models.Model):
 
     def __str__(self):
         return f"{self.title}"
+    
+    @property
+    def average_rating(self):
+        return self.review.aggregate(avg=Avg("rating"))["avg"]
+
 
 
 class Review(models.Model):
@@ -25,6 +32,7 @@ class Review(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="reviewer")
     body = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
+    rating = models.PositiveSmallIntegerField(default=5, validators=[MinValueValidator(1), MaxValueValidator(5)])
 
     class Meta:
         ordering = ["created_on"]

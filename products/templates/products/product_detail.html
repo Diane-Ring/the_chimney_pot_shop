@@ -48,8 +48,17 @@
     <div class="col-12">
       <strong class="text-secondary">
         <i class="far fa-reviews"></i> {{ review_count }}
-      </strong>
-    </div>
+        </strong>
+        {% if average_rating %}
+        <strong class="text-secondary ms-3">
+          Average rating: {{ average_rating|floatformat:1 }} / 5
+        </strong>
+        {% else %}
+        <strong class="text-secondary ms-3">
+          No ratings yet
+        </strong>
+        {% endif %}
+      </div>
     <div class="col-12">
       <hr>
     </div>
@@ -69,6 +78,8 @@
               {{ review.created_on }}
             </span> wrote:
           </p>
+           <p class="mb-2">Rating: <strong>{{ review.rating }}/5</strong></p>
+          <span id="reviewRating{{ review.id }}" class="d-none">{{ review.rating }}</span>
           <div id="review{{ review.id }}">
             {{ review.body | linebreaks }}
           </div>

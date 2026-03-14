@@ -54,6 +54,7 @@ def product_detail(request, slug):
 
     reviews = product.review.all().order_by("-created_on")
     review_count = product.review.all().count()
+    average_rating = product.average_rating
 
     return render(
         request,
@@ -61,8 +62,9 @@ def product_detail(request, slug):
         {
             "product": product,
             "reviews": reviews,
-            "reviews_count": review_count,
+            "review_count": review_count,
             "review_form": review_form,
+            "average_rating": average_rating
         },
     )
 
