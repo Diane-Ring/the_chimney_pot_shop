@@ -78,7 +78,8 @@
               {{ review.created_on }}
             </span> wrote:
           </p>
-           <p class="mb-2">Rating: <strong>{{ review.rating }}/5</strong></p>
+          <h5 id="reviewTitle{{ review.id }}">{{ review.title }}</h5>
+          <p class="mb-2">Rating: <strong>{{ review.rating }}/5</strong></p>
           <span id="reviewRating{{ review.id }}" class="d-none">{{ review.rating }}</span>
           <div id="review{{ review.id }}">
             {{ review.body | linebreaks }}

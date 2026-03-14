@@ -6,7 +6,7 @@ from django import forms
 class ReviewForm(forms.ModelForm):
     class Meta:
         model = Review
-        fields = ('rating','body',)
+        fields = ('title', 'rating','body',)
 
 class ProductForm(forms.ModelForm):
     class Meta:

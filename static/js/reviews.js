@@ -1,4 +1,5 @@
 const editButtons = document.getElementsByClassName("btn-edit");
+const reviewTitle = document.getElementById("id_title");
 const reviewText = document.getElementById("id_body");
 const reviewRating = document.getElementById("id_rating");
 const reviewForm = document.getElementById("reviewForm");
@@ -19,8 +20,16 @@ const deleteConfirm = document.getElementById("deleteConfirm");
 for (let button of editButtons) {
     button.addEventListener("click", (e) => {
         let reviewId = e.target.getAttribute("review_id");
-        let ratingValue = document.getElementById(`reviewRating${reviewId}`).innerText.trim();        
+
+        const titleEl = document.getElementById(`reviewTitle${reviewId}`);
+        const titleValue = titleEl ? titleEl.innerText.trim() : "";
+
+        let ratingValue = document.getElementById(`reviewRating${reviewId}`).innerText.trim();
         let reviewContent = document.getElementById(`review${reviewId}`).innerText;
+
+        if (reviewTitle) {
+            reviewTitle.value = titleValue;
+        }
         if (reviewRating) {
             reviewRating.value = ratingValue;
         }
