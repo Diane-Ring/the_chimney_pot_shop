@@ -153,7 +153,7 @@ The site has a facility for a user to log out of their account.
 
 ### Add a Review
 
-Only when a user is logged in, can they add a review to any published product.<br>
+Only when a user is logged in, can they add a review to any published product.  The review form includes a Review Title, and a rating out of 5, as well as the space to leave a comment.<br>
 This form appears at the bottom of the page.<br>
 ![Leave a Review](assets/images/leave_review.jpg)
 
